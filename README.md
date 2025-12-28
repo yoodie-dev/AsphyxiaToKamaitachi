@@ -1,6 +1,6 @@
 # AsphyxiaToKamaitachi
 
-A converter for Asphyxia server databases to import scores to Kamaitachi.
+A converter for Asphyxia server databases to import scores to Kamaitachi. Forked to add support for MAXXIVE CLEAR and XCD/ULT difficulties.
 
 ## Requirements
 - Python 3.10+
