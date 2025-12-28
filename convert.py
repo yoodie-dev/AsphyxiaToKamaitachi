@@ -79,6 +79,8 @@ for score in scoresCleaned:
             lamp = "ULTIMATE CHAIN"
         case 5:
             lamp = "PERFECT ULTIMATE CHAIN"
+        case 6:
+            lamp = "MAXXIVE CLEAR"
 
     match score['type']:
         case 0:
@@ -99,14 +101,18 @@ for score in scoresCleaned:
                             diff = "HVN"
                         case "5":
                             diff = "VVD"
+                        case "6":
+                            diff = "XCD"
                     break
         case 4:
             diff = "MXM"
+        case 5:
+            diff = "ULT"
 
     kamaiScore = {
     "score": score['score'],
     "lamp": lamp,
-    "matchType": "inGameID",
+    "matchType": "sdvxInGameID",
     "identifier": str(score['mid']),
     "difficulty": diff,
     "timeAchieved": score['updatedAt']['$$date']
